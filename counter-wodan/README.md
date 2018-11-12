@@ -3,6 +3,9 @@
 
 in wodan/:
 
+    # This seems to be temporarily required to get wodan-unix to build
+    opam install mirage-block-unix
+
     opam pin add -k path wodan.dev .
     opam pin add -k path wodan-unix.dev .
 
@@ -13,8 +16,8 @@ to build the solo5 hvt unikernel:
 
 Add the following pins:
 
-    opam pin add mirage-solo5.dev git+https://github.com/mato/mirage-solo5#fixes-for-wodan
-    opam pin add mirage-block-solo5.dev git+https://github.com/mato/mirage-block-solo5#fixes-for-wodan
+    ~~opam pin add mirage-solo5.dev git+https://github.com/mato/mirage-solo5#fixes-for-wodan~~
+    ~~opam pin add mirage-block-solo5.dev git+https://github.com/mato/mirage-block-solo5#fixes-for-wodan~~
 
 Then:
 
