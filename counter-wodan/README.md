@@ -14,13 +14,6 @@ in wodan/:
 
 to build the solo5 hvt unikernel:
 
-Add the following pins:
-
-    ~~opam pin add mirage-solo5.dev git+https://github.com/mato/mirage-solo5#fixes-for-wodan~~
-    ~~opam pin add mirage-block-solo5.dev git+https://github.com/mato/mirage-block-solo5#fixes-for-wodan~~
-
-Then:
-
     mirage configure -t hvt --http=80
     mirage build
 
